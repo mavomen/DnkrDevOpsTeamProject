@@ -128,36 +128,36 @@ Review: Amir
 
 ### 1.1 Set up the Ubuntu server
 
-- [ ] Create an Ubuntu 22.04 Server VM or get an Ubuntu 22.04 VPS.
-- [ ] Check that it has at least 2 GB RAM and 20 GB disk space.
-- [ ] Set up networking so the machine running Ansible can reach the server.
-- [ ] Record the server IP address and SSH username.
-- [ ] Set up SSH access and make sure it works.
-- [ ] Keep passwords and private SSH keys out of the repository.
+- [x] Create an Ubuntu 22.04 Server VM or get an Ubuntu 22.04 VPS.
+- [x] Check that it has at least 2 GB RAM and 20 GB disk space.
+- [x] Set up networking so the machine running Ansible can reach the server.
+- [x] Record the server IP address and SSH username.
+- [x] Set up SSH access and make sure it works.
+- [x] Keep passwords and private SSH keys out of the repository.
 
 Save this:
 
-- [ ] `01_environment/server_info.md`
-  - [ ] Server IP address.
-  - [ ] SSH username and connection method.
-  - [ ] CPU, RAM, and disk information.
-  - [ ] No passwords, private keys, or other secrets.
+- [x] `01_environment/server_info.md`
+  - [x] Server IP address.
+  - [x] SSH username and connection method.
+  - [x] CPU, RAM, and disk information.
+  - [x] No passwords, private keys, or other secrets.
 
 ### 1.2 Connect and inspect the server
 
-- [ ] Connect to the server over SSH.
-- [ ] Check the kernel version.
-- [ ] Check the Ubuntu version.
-- [ ] Check disk usage.
-- [ ] Check memory usage.
-- [ ] List the network interfaces.
-- [ ] Save the commands and their output in a readable format.
+- [x] Connect to the server over SSH.
+- [x] Check the kernel version.
+- [x] Check the Ubuntu version.
+- [x] Check disk usage.
+- [x] Check memory usage.
+- [x] List the network interfaces.
+- [x] Save the commands and their output in a readable format.
 
 Save this:
 
-- [ ] `01_environment/server_connection.txt`
+- [x] `01_environment/server_connection.txt`
 
-Stage 1 is complete when: SSH works from the machine we'll use to run Ansible, and we've recorded the server's OS and hardware details.
+Stage 1 is complete when: SSH works from the machine we'll use to run Ansible, and we've recorded the server's OS and hardware details. **DONE (Mava, solo)**.
 
 ---
 
