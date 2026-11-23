@@ -1,0 +1,50 @@
+
+PLAY [Prepare Ubuntu 22.04 server] *********************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [mava-server]
+
+TASK [Update apt package index] ************************************************
+ok: [mava-server]
+
+TASK [Install required packages] ***********************************************
+ok: [mava-server]
+
+TASK [Install UFW firewall] ****************************************************
+ok: [mava-server]
+
+TASK [Allow SSH through UFW] ***************************************************
+ok: [mava-server]
+
+TASK [Allow HTTP through UFW] **************************************************
+ok: [mava-server]
+
+TASK [Allow HTTPS through UFW] *************************************************
+ok: [mava-server]
+
+TASK [Enable UFW] **************************************************************
+ok: [mava-server]
+
+TASK [Install Docker] **********************************************************
+changed: [mava-server]
+
+TASK [Install Docker Compose] **************************************************
+changed: [mava-server]
+
+TASK [Enable and start Docker service] *****************************************
+ok: [mava-server]
+
+TASK [Add mava user to docker group] *******************************************
+ok: [mava-server]
+
+TASK [Install Nginx] ***********************************************************
+changed: [mava-server]
+
+TASK [Enable and start Nginx service] ******************************************
+ok: [mava-server]
+
+PLAY RECAP *********************************************************************
+mava-server                : ok=14   changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+RC: 0

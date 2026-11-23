@@ -1,0 +1,9 @@
+all:
+  hosts:
+    mava-server:
+      ansible_host: 127.0.0.1
+      ansible_port: 2222
+      ansible_user: mava
+      ansible_ssh_private_key_file: /tmp/kilo/vm-stage1/ssh/id_ed25519
+      ansible_python_interpreter: /usr/bin/python3
+      ansible_ssh_common_args: '-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'

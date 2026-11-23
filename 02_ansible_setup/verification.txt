@@ -1,0 +1,30 @@
+=== Docker version ===
+Docker version 29.1.3, build 29.1.3-0ubuntu3~22.04.2
+
+=== Docker Compose version ===
+docker-compose version 1.29.2, build unknown
+
+=== Nginx version ===
+
+STDERR: nginx version: nginx/1.18.0 (Ubuntu)
+
+=== Docker service status ===
+active
+
+=== Nginx service status ===
+active
+
+=== UFW status ===
+Status: active
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     ALLOW       Anywhere                  
+80/tcp                     ALLOW       Anywhere                  
+443/tcp                    ALLOW       Anywhere                  
+22/tcp (v6)                ALLOW       Anywhere (v6)             
+80/tcp (v6)                ALLOW       Anywhere (v6)             
+443/tcp (v6)               ALLOW       Anywhere (v6)
+
+=== Groups for mava ===
+mava : mava sudo docker

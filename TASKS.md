@@ -168,48 +168,48 @@ Review: Amir
 
 ### 2.1 Install Ansible
 
-- [ ] Install Ansible on the control machine.
-- [ ] Check that Ansible runs and record its version.
-- [ ] Confirm that SSH authentication and privilege escalation are set up correctly.
+- [x] Install Ansible on the control machine.
+- [x] Check that Ansible runs and record its version.
+- [x] Confirm that SSH authentication and privilege escalation are set up correctly.
 
 ### 2.2 Create the inventory and test the connection
 
-- [ ] Create `02_ansible_setup/inventory` in INI or YAML format.
-- [ ] Add the Ubuntu server to the inventory.
-- [ ] Set the connection variables we need.
-- [ ] Set the Python interpreter if the target needs it.
-- [ ] Run `ansible -m ping` against the server.
-- [ ] Run `ansible -m setup` and save the host facts.
+- [x] Create `02_ansible_setup/inventory` in INI or YAML format.
+- [x] Add the Ubuntu server to the inventory.
+- [x] Set the connection variables we need.
+- [x] Set the Python interpreter if the target needs it.
+- [x] Run `ansible -m ping` against the server.
+- [x] Run `ansible -m setup` and save the host facts.
 
 Save these:
 
-- [ ] `02_ansible_setup/inventory`
-- [ ] `02_ansible_setup/ping_test.txt`
-- [ ] `02_ansible_setup/facts.txt`
+- [x] `02_ansible_setup/inventory`
+- [x] `02_ansible_setup/ping_test.txt`
+- [x] `02_ansible_setup/facts.txt`
 
 ### 2.3 Write the server setup playbook
 
-- [ ] Create `02_ansible_setup/server_setup.yml`.
-- [ ] Update the package index and upgrade packages as appropriate.
-- [ ] Install `curl`, `wget`, `git`, `vim`, and `htop`.
-- [ ] Install and configure UFW.
-- [ ] Install Docker and Docker Compose using a method that works on the target Ubuntu version.
-- [ ] Enable and start the Docker service.
-- [ ] Add the intended remote user to the `docker` group.
-- [ ] Install, enable, and start Nginx.
-- [ ] Allow SSH (22), HTTP (80), and HTTPS (443) through the firewall.
-- [ ] Use `become` where administrative permissions are needed.
-- [ ] Run the playbook and save its output.
-- [ ] Check the Docker and Nginx versions.
-- [ ] Check that the required services are running and the firewall rules are in place.
+- [x] Create `02_ansible_setup/server_setup.yml`.
+- [x] Update the package index and upgrade packages as appropriate.
+- [x] Install `curl`, `wget`, `git`, `vim`, and `htop`.
+- [x] Install and configure UFW.
+- [x] Install Docker and Docker Compose using a method that works on the target Ubuntu version.
+- [x] Enable and start the Docker service.
+- [x] Add the intended remote user to the `docker` group.
+- [x] Install, enable, and start Nginx.
+- [x] Allow SSH (22), HTTP (80), and HTTPS (443) through the firewall.
+- [x] Use `become` where administrative permissions are needed.
+- [x] Run the playbook and save its output.
+- [x] Check the Docker and Nginx versions.
+- [x] Check that the required services are running and the firewall rules are in place.
 
 Save these:
 
-- [ ] `02_ansible_setup/server_setup.yml`
-- [ ] `02_ansible_setup/playbook_output.txt`
-- [ ] `02_ansible_setup/verification.txt` — Docker version, Nginx version, service status, and firewall status/rules.
+- [x] `02_ansible_setup/server_setup.yml`
+- [x] `02_ansible_setup/playbook_output.txt`
+- [x] `02_ansible_setup/verification.txt` — Docker version, Nginx version, service status, and firewall status/rules.
 
-Stage 2 is complete when: Ansible connects successfully and the playbook leaves the server with the required packages, services, user permissions, and firewall rules.
+Stage 2 is complete when: Ansible connects successfully and the playbook leaves the server with the required packages, services, user permissions, and firewall rules. **DONE (Mava, solo lead)**.
 
 ---
 

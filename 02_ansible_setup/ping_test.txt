@@ -1,0 +1,6 @@
+mava-server | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+
+RC: 0
