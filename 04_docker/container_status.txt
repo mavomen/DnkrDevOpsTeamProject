@@ -1,0 +1,5 @@
+NAME                                      IMAGE                                                                     COMMAND                  SERVICE         CREATED              STATUS                        PORTS
+tarek-multi-service-app-backend-1         sha256:456f7cabb5d776b1e5e1ab73e93da6e0cc562ec76dc45583ac19663e7c7651e6   "gunicorn --bind 0.0…"   backend         About a minute ago   Up About a minute (healthy)   5000/tcp
+tarek-multi-service-app-db-1              public.ecr.aws/docker/library/postgres:15-alpine                          "docker-entrypoint.s…"   db              5 minutes ago        Up About a minute (healthy)   5432/tcp
+tarek-multi-service-app-frontend-1        sha256:5d10f8b2dbde28c4676a780c95086d8859616a7103f71062910159964ab3b06d   "/docker-entrypoint.…"   frontend        5 minutes ago        Up 4 minutes (healthy)        80/tcp
+tarek-multi-service-app-reverse_proxy-1   sha256:f95dca48c3c7bcdb0594de3ae646336eec173de70cea82c42d0c9f0ad7739e7d   "/docker-entrypoint.…"   reverse_proxy   5 minutes ago        Up 4 minutes (healthy)        0.0.0.0:8080->80/tcp, [::]:8080->80/tcp

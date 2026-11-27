@@ -1,0 +1,8 @@
+HTTP/1.1 200 OK
+Server: nginx/1.27.5
+Date: Wed, 25 Nov 2026 16:13:43 GMT
+Content-Type: application/json
+Content-Length: 47
+Connection: keep-alive
+
+{"message":"Hello from Flask API!","visits":5}

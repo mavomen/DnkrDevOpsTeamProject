@@ -1,0 +1,41 @@
+# Stage 4 - Runtime Test Results
+
+## Environment
+- Application: multi-service-docker-app
+- Orchestration: Docker Compose
+- Database: PostgreSQL 15 Alpine
+- Application access: http://localhost:8080
+
+## Build
+- Docker Compose build: PASS
+- Backend image build: PASS
+- PostgreSQL image available from Amazon ECR Public: PASS
+
+## Container Health
+- backend: healthy
+- db: healthy
+- frontend: healthy
+- reverse_proxy: healthy
+
+## Runtime Tests
+- Frontend HTTP response: 200 OK
+- API HTTP response: 200 OK
+- API database operation: PASS
+- Visit counter increment: PASS
+- Database restart: PASS
+- Visit counter persistence after database restart: PASS
+
+## Network and Port Exposure
+- Reverse proxy host port: 8080
+- Backend host port exposure: none
+- PostgreSQL host port exposure: none
+- Internal backend and database communication: PASS
+
+## Known Issues and Notes
+- Initial API request immediately after backend restart returned HTTP 502.
+- A subsequent request returned HTTP 200 after the backend became available.
+- An SQL column mismatch (count vs counter) was found and fixed.
+- The database volume was preserved during testing.
+
+## Overall
+Core build and runtime tests passed.

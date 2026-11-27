@@ -264,68 +264,68 @@ Review: Mava
 
 ### 4.1 Check what the project already provides
 
-- [ ] Check whether the upstream project already has a Dockerfile.
-- [ ] Check whether it already has a Compose file.
-- [ ] Read the existing container configuration and note anything missing or unsafe.
-- [ ] Write down the required ports, environment variables, volumes, and service dependencies.
-- [ ] Decide what belongs in the image and what should be passed in at runtime.
+- [x] Check whether the upstream project already has a Dockerfile.
+- [x] Check whether it already has a Compose file.
+- [x] Read the existing container configuration and note anything missing or unsafe.
+- [x] Write down the required ports, environment variables, volumes, and service dependencies.
+- [x] Decide what belongs in the image and what should be passed in at runtime.
 
 ### 4.2 Write the Dockerfile
 
-- [ ] Create `04_docker/Dockerfile`.
-- [ ] Choose a suitable official base image and version.
-- [ ] Set the working directory.
-- [ ] Install the application's dependencies.
-- [ ] Copy the required application files into the image.
-- [ ] Document the port the application listens on.
-- [ ] Set the correct command to start the application.
+- [x] Create `04_docker/Dockerfile`.
+- [x] Choose a suitable official base image and version.
+- [x] Set the working directory.
+- [x] Install the application's dependencies.
+- [x] Copy the required application files into the image.
+- [x] Document the port the application listens on.
+- [x] Set the correct command to start the application.
 - [ ] Keep the image reasonably small. Use multi-stage builds if they make sense for this application.
 - [ ] Add `04_docker/.dockerignore` if needed.
 - [ ] Avoid putting secrets in the image. Use a non-root user where practical.
-- [ ] Explain the important parts of the Dockerfile in plain language.
+- [x] Explain the important parts of the Dockerfile in plain language.
 
 Save these:
 
-- [ ] `04_docker/Dockerfile`
+- [x] `04_docker/Dockerfile`
 - [ ] `04_docker/.dockerignore` (if needed)
-- [ ] `04_docker/dockerfile_explanation.md`
+- [x] `04_docker/dockerfile_explanation.md`
 
 ### 4.3 Write the Compose file
 
-- [ ] Create `04_docker/docker-compose.yml`.
-- [ ] Add the web application service.
-- [ ] Add the database service.
-- [ ] Put the services on an appropriate Compose network.
-- [ ] Add a named volume so database data survives container recreation.
-- [ ] Configure the required environment variables without committing real secrets.
-- [ ] Set up port mappings. Don't expose the database port publicly unless the project actually needs it.
-- [ ] Set the service dependencies.
-- [ ] Add health checks where they're supported and useful.
-- [ ] Choose restart policies.
-- [ ] Explain how the services, network, volumes, and configuration fit together.
+- [x] Create `04_docker/docker-compose.yml`.
+- [x] Add the web application service.
+- [x] Add the database service.
+- [x] Put the services on an appropriate Compose network.
+- [x] Add a named volume so database data survives container recreation.
+- [x] Configure the required environment variables without committing real secrets.
+- [x] Set up port mappings. Don't expose the database port publicly unless the project actually needs it.
+- [x] Set the service dependencies.
+- [x] Add health checks where they're supported and useful.
+- [x] Choose restart policies.
+- [x] Explain how the services, network, volumes, and configuration fit together.
 
 Save these:
 
-- [ ] `04_docker/docker-compose.yml`
-- [ ] `04_docker/compose_explanation.md`
+- [x] `04_docker/docker-compose.yml`
+- [x] `04_docker/compose_explanation.md`
 
 ### 4.4 Build and test it locally
 
-- [ ] Build the images.
-- [ ] Start the containers in the background.
-- [ ] Check the services with `docker compose ps` (or `docker-compose ps` if that's what the installed version supports).
-- [ ] Read the application and database logs.
-- [ ] Open the application in a browser or test it with `curl`.
-- [ ] Confirm that the application can connect to the database.
-- [ ] Check that database data is still there after recreating the containers.
-- [ ] Fix any problems and repeat the tests.
-- [ ] Save the actual build output and test results.
+- [x] Build the images.
+- [x] Start the containers in the background.
+- [x] Check the services with `docker compose ps` (or `docker-compose ps` if that's what the installed version supports).
+- [x] Read the application and database logs.
+- [x] Open the application in a browser or test it with `curl`.
+- [x] Confirm that the application can connect to the database.
+- [x] Check that database data is still there after recreating the containers.
+- [x] Fix any problems and repeat the tests.
+- [x] Save the actual build output and test results.
 
 Save these:
 
-- [ ] `04_docker/build_log.txt`
-- [ ] `04_docker/container_status.txt`
-- [ ] `04_docker/test_results.txt`
+- [x] `04_docker/build_log.txt`
+- [x] `04_docker/container_status.txt`
+- [x] `04_docker/test_results.txt`
 
 Stage 4 is complete when: The full Compose stack builds and starts locally, the application responds, and we've tested the database connection and data persistence.
 
