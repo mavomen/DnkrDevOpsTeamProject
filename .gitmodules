@@ -1,0 +1,3 @@
+[submodule "03_project_clone/multi-service-docker-app"]
+	path = 03_project_clone/multi-service-docker-app
+	url = https://github.com/nasser-tarek/multi-service-docker-app.git

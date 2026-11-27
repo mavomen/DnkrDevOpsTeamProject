@@ -220,10 +220,10 @@ Review: Mava
 
 ### 3.1 Choose an application
 
-- [ ] Find a small web application on GitHub that uses a database.
-- [ ] Make sure it has a web interface and an application/backend component.
-- [ ] Check that the project is a reasonable size for this assignment and that we can understand how it runs.
-- [ ] Check its license and save the upstream repository URL.
+- [x] Find a small web application on GitHub that uses a database.
+- [x] Make sure it has a web interface and an application/backend component.
+- [x] Check that the project is a reasonable size for this assignment and that we can understand how it runs.
+- [x] Check its license and save the upstream repository URL.
 - [ ] Look at its setup instructions and recent activity to see whether it's practical to use.
 - [ ] Agree on the application and database before starting the Docker work.
 
@@ -236,22 +236,22 @@ Some places and search terms to start with:
 
 ### 3.2 Clone it and understand how it works
 
-- [ ] Clone the chosen repository under `03_project_clone/`.
-- [ ] Inspect the directory structure and list the important files.
+- [x] Clone the chosen repository under `03_project_clone/`.
+- [x] Inspect the directory structure and list the important files.
 - [ ] Find the application's entry point and startup command.
-- [ ] Identify its runtime, dependencies, and build/install requirements.
-- [ ] Find the application and database ports.
-- [ ] List the environment variables and configuration files it needs.
-- [ ] Understand how the application connects to the database.
-- [ ] Check whether the database needs initialization scripts or migrations.
-- [ ] Look for an existing Dockerfile or Compose file and decide what we can reuse.
+- [x] Identify its runtime, dependencies, and build/install requirements.
+- [x] Find the application and database ports.
+- [x] List the environment variables and configuration files it needs.
+- [x] Understand how the application connects to the database.
+- [x] Check whether the database needs initialization scripts or migrations.
+- [x] Look for an existing Dockerfile or Compose file and decide what we can reuse.
 - [ ] Record how to run the application outside Docker, if the project supports it.
 - [ ] Where practical, run the application once using its own instructions before containerizing it.
 
 Save these:
 
-- [ ] `03_project_clone/project_structure.txt` — directory tree and important files.
-- [ ] `03_project_clone/project_info.md` — upstream URL, short description, technologies, dependencies, and ports.
+- [x] `03_project_clone/project_structure.txt` — directory tree and important files.
+- [x] `03_project_clone/project_info.md` — upstream URL, short description, technologies, dependencies, and ports.
 
 Stage 3 is complete when: We both understand how the application starts, how it talks to the database, and which ports and settings it needs.
 
